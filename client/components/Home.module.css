@@ -1,0 +1,91 @@
+.list {
+  height: 80vh;
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  box-shadow: 0px 9px 73px 14px rgba(0, 0, 0, 0.1);
+  width: 20vw;
+  margin: 5vh 5vw;
+  position: absolute;
+}
+.head {
+  font-size: 2em;
+  text-align: center;
+  padding: 3vh 0;
+}
+.user_card {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  padding-left: 3vw;
+  justify-content: left;
+  cursor: pointer;
+}
+.user_card:hover {
+  background-color: rgb(226, 226, 226);
+}
+.active_user {
+  background-color: rgb(226, 226, 226);
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  padding-left: 3vw;
+  justify-content: left;
+  cursor: pointer;
+}
+.user_card img {
+  height: 4vh;
+  clip-path: circle();
+}
+.messageBox {
+  display: flex;
+  position: absolute;
+  bottom: 5vh;
+  right: 0;
+  margin: 0 2vw;
+  padding: 10px;
+  border-radius: 10px;
+  width: 70%;
+  border: 2px solid rgb(161, 161, 161);
+  align-items: center;
+}
+.messageBox input {
+  width: 90%;
+  height: 100%;
+  font-size: 1.7em;
+  border: none;
+}
+.messageBox input:focus {
+  border: none;
+  outline: none;
+}
+
+.messageBox button {
+  width: 10%;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+.msgs {
+  /* margin: 10vh 30vw; */
+  left: 28vw;
+  bottom: 15vh;
+  width: 70vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.msgs p {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgb(238, 235, 235);
+  width: fit-content;
+  border-radius: 10px;
+  font-size: 1.7em;
+}
+.self {
+  align-self: flex-end;
+}
+.main_head {
+  text-align: center;
+  font-size: 2em;
+  margin: 2vh 0;
+}
