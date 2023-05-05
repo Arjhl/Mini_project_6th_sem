@@ -56,16 +56,6 @@ const Home = () => {
       });
       setMsgs(duplicate);
 
-      const url = `https://ai-chatbot.p.rapidapi.com/chat/free?message=${msgRef.current.value}&uid=Arj`;
-      const options = {
-        method: "GET",
-        headers: {
-          "X-RapidAPI-Key":
-            "60fb54c45cmsh9771aa916016de6p1db949jsna463ae4031e9",
-          "X-RapidAPI-Host": "ai-chatbot.p.rapidapi.com",
-        },
-      };
-
       const response = await fetch(url, options);
       const result = await response.json();
       console.log(result.chatbot.response);
